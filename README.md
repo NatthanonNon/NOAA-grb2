@@ -1,12 +1,12 @@
 # NOAA-grb2
-GRB2 Tutorial with NOAA dataset
+GRIB2 Tutorial with NOAA dataset
 
 ## Overview
 This tutorial will show you how to deal with `GRIB data(.grb)` and `GRIB2 data(.grb2)` by using dataset from [NOAA](https://www.noaa.gov/) as an example.
 
 There are 3 sections in this tutorial: **Data Scraping**, **Data Inspecting** and **Data Preprocessing**.
 
-In the first place, I've learned how to get started with GRIB2 weather data from this [article](https://spire.com/tutorial/spire-weather-tutorial-intro-to-processing-grib2-data-with-python/). Although it gives me many useful code and understanding, it is not enogh to deal with my task. 
+In the first place, I've learned how to get started with GRIB2 weather data from this [article](https://spire.com/tutorial/spire-weather-tutorial-intro-to-processing-grib2-data-with-python/). Although it gives me many useful code and understanding, it is not enough to deal with my task. 
 
 ## Getting Started
 
@@ -27,7 +27,7 @@ To get these data with specific unit from NOAA dataset(`.grb` or `.grb2`)
   ```
   conda install -c anaconda xarray
   conda install -c conda-forge pynio
-  conda install -c anaconda pandas
+  conda install -c anaconda beautifulsoup4 requests
   ```
   If it gives you this error `ImportError: libtbb.so.2: cannot open shared object file: No such file or directory` try 
   ```
@@ -51,7 +51,7 @@ To get these data with specific unit from NOAA dataset(`.grb` or `.grb2`)
 
 ### Dataset
 
-Fotunately, NOAA had provided many climate dataset. In this totorial, we will use the dataset from [Global Forecast System (GFS)](https://www.ncdc.noaa.gov/data-access/model-data/model-datasets/global-forcast-system-gfs)  
+Fotunately, NOAA has provided many climate dataset. In this tutorial, we will use the dataset from [Global Forecast System (GFS)](https://www.ncdc.noaa.gov/data-access/model-data/model-datasets/global-forcast-system-gfs)  
 
 And scrape the `GRIB data(.grb)` and `GRIB2 data(.grb2)` from `Product Types` > `GFS Analysis` > `GFS-ANL, Historical Model` which is this [link](https://www.ncei.noaa.gov/data/global-forecast-system/access/historical/analysis/)
 
